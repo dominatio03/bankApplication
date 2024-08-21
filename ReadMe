@@ -1,0 +1,17 @@
+ReadMe
+Sql file represents code used to create table with values
+
+PHP file allows the user to select payee and payer accounts that will be used to transfer the amount specified. 
+Dropdown boxes with values are received from the database.
+After the user presses submit button, validation checks are activated that give an error 
+in case if the amount is within the wrong limit or the same account is choosen for the payee and the payer or the reference provided is too long.
+In case if validation checks are passed, then transfer takes place. 
+In case if the payer doesn't have an initial balance for a successful transaction, then an overdraft is used to complete a transaction.
+
+Sql представляет собой код, используемый для создания таблицы со значениями.
+Файл PHP позволяет пользователю выбирать счета получателя и плательщика, которые будут использоваться для перевода указанной суммы.
+Выпадающие списки со значениями получены из базы данных.
+После того, как пользователь нажимает кнопку «Отправить», активируются проверки валидации, которые выдают ошибку в случае, 
+если сумма слишком велика или мала или в качестве получателя платежа и плательщика выбран один и тот же счет, или предоставленная ссылка слишком длинная.
+В случае, если валидационные проверки пройдены, происходит передача.
+В случае, если у плательщика нет начального баланса для успешной транзакции, то для завершения транзакции используется счет овердрафт(перерасход или кредит). Учитывая то что на счете овердрафт достаточно денег.
